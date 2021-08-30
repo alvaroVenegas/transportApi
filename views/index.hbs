@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transport Api</title>
+  </head>
+  <body>
+    <h1>Transport Api</h1>
+
+    <div class="links">
+   
+        <a href="/login">Login</a>
+        <a href="/user/register">Register</a>
+        <a href="/product/create">Crear Producto</a>
+        <a href="/sending/create">Crear Envio</a>
+       </div>
+
+    {{#if user}}
+      <div class="logout">
+        <form action="/login/out" method="POST">
+          <input type="submit" value="Logout" />
+        </form>
+      </div>
+    {{/if}}
+  </body>
+</html>

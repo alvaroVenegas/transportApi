@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Sending</title>
+</head>
+<body>
+    
+    <h1>Crear Envio</h1>
+
+    <form action="/sending/create" method="POST" enctype="multipart/form-data">
+
+        <label>
+            <p>Fecha de entrega</p>
+            <input name="date" type="date" required placeholder="">
+        </label>
+        <label>
+            <p>Camion</p>
+            <input name="truck" type="text" required placeholder="Camion">
+        </label>
+        <label>
+            <p>Conductor</p>
+            <input name="driver" type="text" required placeholder="Conductor">
+        </label>
+        <label>
+            <p>Ciudad</p>
+            <input name="city" type="text" required placeholder="Ciudad">
+        </label>
+        <label>
+            <p>Calle</p>
+            <input name="street" type="text" required placeholder="Calle">
+        </label>
+        <label>
+            <p>Numero</p>
+            <input name="number" type="text" required placeholder="Numero">
+        </label>
+        <label>
+            <p>Otros</p>
+            <input name="other" type="text" placeholder="Otros">
+        </label>
+
+        <label>
+            <p>Producto</p>
+            <input name="product" type="text" required placeholder="Producto">
+        </label>
+        <label>
+            <p>Cantidad</p>
+            <input name="amountProducts" type="number" required placeholder="Cantidad">
+        </label>
+
+        <label>
+            <p>Documento</p>
+            <input name="document" type="file" accept="jpg,jpeg,png,pdf">
+        </label>
+
+        <div>
+            <button type="submit">Crear Envio</button>
+        </div>
+    </form>
+</body>
+</html>

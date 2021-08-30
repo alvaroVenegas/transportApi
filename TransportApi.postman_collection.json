@@ -1,0 +1,693 @@
+{
+	"info": {
+		"_postman_id": "20a5897a-30a7-4e10-b59d-7843d616bb60",
+		"name": "TransportApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "http://localhost:3000/user/",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/60d243bea33605018c27f6ac",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/60d243bea33605018c27f6ac",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"60d243bea33605018c27f6ac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"rol\" : \"driver\",\r\n\"userName\" : \"Paca\",\r\n\"lastName\" : \"La Vaca\",\r\n\"email\" : \"paca@transport.com\",\r\n\"password\" : \"1234Abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/password/",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"newPassword\" : \"Abcd1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/password/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"password",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/60cbab2f7fe0301a041f4992",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n   \"rol\": \"driver\",\r\n    \"userName\": \"Mario\",\r\n    \"lastName\": \"Miranda \",\r\n    \"email\": \"mario@transport.com\"    \r\n }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/60d244cf2fd67f041ca40f12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"60d244cf2fd67f041ca40f12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/user/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "http://localhost:3000/products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/products/60d2f48ed0f0ad201c33389d",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/60d2f48ed0f0ad201c33389d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"60d2f48ed0f0ad201c33389d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/products/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "productName",
+									"value": "Vigas HEB-60",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/C:/bootcamp/node/61+w2cU5HtL._AC_SY355_.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/products/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/products/update/60ca4518fd95cd2ea0cd1644",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productName\": \"Placa 40mm\",\r\n    \"stock\": 100,\r\n    \"img\": \"https://res.cloudinary.com/alvarouveeme/image/upload/v1624212384/ytc7bwepvoloo21fxhpa.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products/update/60ca4518fd95cd2ea0cd1649",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"update",
+								"60ca4518fd95cd2ea0cd1649"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/products/delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/delete/60ca4518fd95cd2ea0cd164a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"delete",
+								"60ca4518fd95cd2ea0cd164a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Trucks",
+			"item": [
+				{
+					"name": "http://localhost:3000/trucks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/trucks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trucks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/trucks/60cfa6f065a7e41750a7724d",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/trucks/60cfa6f065a7e41750a7724d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trucks",
+								"60cfa6f065a7e41750a7724d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/trucks/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mark\": \"Mercedes\",\r\n    \"model\": \"Atos 75\",\r\n    \"plate\": \"2448GRT\",\r\n    \"dateITV\": \"2021/12/04\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trucks/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trucks",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/trucks/update/60d248f11a218f3078ef25cb",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mark\": \"Mercedes\",\r\n    \"model\": \"Atos 50\",\r\n    \"plate\": \"2548GRT\",\r\n    \"dateITV\": \"2021/12/04\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/trucks/update/60d248f11a218f3078ef25cb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trucks",
+								"update",
+								"60d248f11a218f3078ef25cb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/trucks/delete/60ca450c6dd29440f82cac59",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/trucks/delete/60ca450c6dd29440f82cac59",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"trucks",
+								"delete",
+								"60ca450c6dd29440f82cac59"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sending",
+			"item": [
+				{
+					"name": "http://localhost:3000/sending",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/sending",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sending"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/sending/60d2ecb890af5b1668f3dd9f",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/sending/60d2ecb890af5b1668f3dd9f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sending",
+								"60d2ecb890af5b1668f3dd9f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/sending/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2025/12/14\",\r\n    \"truck\": \"60ca450c6dd29440f82cac51\",\r\n    \"driver\": \"60d244cf2fd67f041ca40f12\",\r\n    \"direction\" : {\r\n        \"city\": \"60d231b42541a119787204ef\",\r\n        \"street\": \"C/ de Luz\",\r\n        \"number\": 24,\r\n        \"other\" : \"\"\r\n    },\r\n    \"products\": [\r\n        {\r\n            \"product\": \"60ca4518fd95cd2ea0cd164e\",\r\n            \"amountProducts\": 75\r\n        },\r\n        {\r\n            \"product\": \"60ca4518fd95cd2ea0cd1645\",\r\n            \"amountProducts\": 16\r\n        },\r\n        {\r\n            \"product\": \"60ca4518fd95cd2ea0cd164a\",\r\n            \"amountProducts\": 12\r\n        }\r\n    ],\r\n    \"document\": \"https://res.cloudinary.com/alvarouveeme/image/upload/v1624218929/fvkd9zxge5ako533bdco.pdf\"     \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/sending/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sending",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/sending/update/60ce7dbf4b32312c9cc9a9e1",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n \"date\": 4851245,\r\n    \"truck\": \"60ca450c6dd29440f82cac51\",\r\n    \"driver\": \"60cbab2f7fe0301a041f4996\",\r\n    \"direction\": {\r\n        \"city\": \"60ca46d062765c22e00b1e2c\",\r\n        \"street\": \"C/ falsa\",\r\n        \"number\": 34,\r\n        \"other\": \"Local\"\r\n    },\r\n    \"products\": [\r\n        {\r\n             \"product\": \"60ca4518fd95cd2ea0cd1648\",\r\n             \"amountProducts\": 45\r\n        },\r\n        {\r\n             \"product\": \"60ca4518fd95cd2ea0cd1648\",\r\n             \"amountProducts\": 100\r\n        }\r\n        \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/sending/update/60d2ecb890af5b1668f3dd9f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sending",
+								"update",
+								"60d2ecb890af5b1668f3dd9f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/sending/delete/60ca4f4cca13c507d4447bca",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/sending/delete/60ca4f4cca13c507d4447bca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"sending",
+								"delete",
+								"60ca4f4cca13c507d4447bca"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "http://localhost:3000/login/out",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/login/out",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login",
+								"out"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login driver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"sara@transport.com\",\r\n    \"password\" : \"1234Abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login office",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"bili@transport.com\",\r\n    \"password\" : \"1234Abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"alvaro@transport.com\",\r\n    \"password\" : \"1234Abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Drivers",
+			"item": [
+				{
+					"name": "http://localhost:3000/drivers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/drivers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drivers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

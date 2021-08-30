@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+
+    <h1>Registro</h1>
+
+    <form action="/user/register" method="POST">
+
+        <label>
+            <p>Email</p>
+            <input name="email" type="email" required placeholder="email">
+        </label>
+
+        <label>
+            <p>Nombre: </p>
+            <input name="userName" type="text" required placeholder="Nombre">
+        </label>
+        
+        <label>
+            <p>Apellido</p>
+            <input name="lastName" type="text" required placeholder="Apellidos">
+        </label>
+
+        <label>
+            <p>Password</p>
+            <input name="password" type="password" required placeholder="password">
+        </label>
+
+        <label>
+            <p>Rol</p>
+            <input name="rol" type="String" required placeholder="Rol">
+        </label>
+
+        <input type="submit" value="Registrarme">
+
+        {{#if error}}
+            <div style="color: red">{{error}}</div>
+        {{/if}}
+    </form>
+</body>
+</html>

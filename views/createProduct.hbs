@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+</head>
+<body>
+    
+    <h1>Crear Producto</h1>
+
+    <form action="/products/create" method="POST" enctype="multipart/form-data">
+
+        <label>
+            <p>Nombre del producto</p>
+            <input name="productName" type="text" required placeholder="Nombre del producto">
+        </label>
+
+        <label>
+            <p>Stock</p>
+            <input name="stock" type="number" required placeholder="stock">
+        </label>
+
+        <label>
+            <p>imagen</p>
+            <input name="img" type="file" required accept="jpg,jpeg,png">
+        </label>
+
+        <div>
+            <button type="submit">Crear Producto</button>
+        </div>
+
+    </form>
+</body>
+</html>

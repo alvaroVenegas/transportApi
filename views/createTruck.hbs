@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Truck</title>
+</head>
+<body>
+    
+    <h1>Crear Camión</h1>
+
+    <form action="/trucks/create" method="POST">
+
+        <label>
+            <p>Marca</p>
+            <input name="mark" type="string" required placeholder="marca">
+        </label>
+
+        <label>
+            <p>Modelo</p>
+            <input name="model" type="string" required placeholder="modelo">
+        </label>
+
+        <label>
+            <p>Código</p>
+            <input name="code" type="number"  >
+        </label>
+       
+        <label>
+            <p>Matricula</p>
+            <input name="plate" type="string" required placeholder="Matrícula">
+        </label>
+       
+        <label>
+            <p>dateITV</p>
+            <input name="dateITV" type="date" required >
+        </label>
+
+        <div>
+            <button type="submit">Crear Camión</button>
+        </div>
+    
+    </form>
+</body>
+</html>
